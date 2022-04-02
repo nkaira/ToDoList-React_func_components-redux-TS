@@ -1,3 +1,17 @@
+# React To Do List (using classes).
+Welcome to my web app. Thats my third work.
+
+## Installation
+Firstly make sure that you have latest version of browser installed.
+
+## Contribute
+I'll be very happy for any input and potential contributions for this project.
+
+Firstly raise an issue. Then if you are assigned to that issue fork the repo, make your edits and make a pull request.
+
+I hope you enjoy my first work :)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

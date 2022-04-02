@@ -1,0 +1,29 @@
+.container {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+}
+
+.interface{
+    color: #e1e1e1;
+    box-sizing: border-box;
+    margin-right: 25px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #4c4c4c;
+    background-color: #323232;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.21);
+
+    &__input {
+        width: 350px;
+    }
+    &__button {
+        width: 110px;
+        font-weight: bold;
+
+        &:hover {
+            background: #686868;
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+
+@import '../../css/colors.scss';
+
+body {
+	font-family: "Arial MT", "Arial - Italic MT", "Arial - Bold MT";
+  background-color: $blue;
+}
+//===============header
+.header {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    background: $white;
+}
+.title {
+    margin: 0;
+    padding: 10px 0 20px 0;
+    font: 35px bold;
+}

@@ -1,0 +1,51 @@
+.container {
+    padding: 0;
+    list-style: none;
+    color: #e1e1e1;
+    margin-top: 30px;
+}
+
+.task {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.21);
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid;
+    background: #838282;
+    margin-bottom: 10px;
+}
+
+.buttonDelete, .buttonComplete{
+    text-decoration: none;
+    box-sizing: border-box;
+    height: 33px;
+    margin: auto 0;
+    width: 80px;
+    color: #e1e1e1;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #4c4c4c;
+    background-color: #323232;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.21); 
+        &:hover {
+            background: #686868;
+            color: black;
+        }
+}
+
+.taskText {
+    padding-top: 6px;
+    width: 150px;
+    text-align: center;
+    margin: auto 0;
+    color: black;
+}
+
+
+.taskComplete {
+    text-decoration: line-through; 
+}
