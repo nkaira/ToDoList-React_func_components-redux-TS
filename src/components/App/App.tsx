@@ -39,10 +39,7 @@ const App = () => {
         <div className={styles.header}>
             <h1 className={styles.title}>To Do List</h1>
             <Routes>
-                <Route path='/' element={<ToDoList />} >
-                    {/* <Route path='test1' element={<TestOne />} />
-                        <Route path='test2' element={<TestTwo />} /> */}
-                </Route>
+                <Route path='/' element={<ToDoList />} />
                 <Route path='/:taskId' element={<TaskDetail />} />
             </Routes>
         </div>
