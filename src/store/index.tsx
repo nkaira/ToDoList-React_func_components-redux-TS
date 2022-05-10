@@ -7,11 +7,13 @@ import { filterStatusReducer } from "./filter/filterReducer";
 
 const reducer = combineReducers({ tasksReducer, filterStatusReducer });
 
-const store = createStore(
+export type Reducer = ReturnType<typeof reducer>
+
+export const store = createStore(
     reducer,
     composeWithDevTools()
 );
 
-export default store;
+export type AppDispatch = typeof store.dispatch;
 
 

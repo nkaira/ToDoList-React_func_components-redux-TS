@@ -1,4 +1,5 @@
 import Storage from "utils/storage";
+import { ITask, IAction } from "Interface/ITask";
 
 export const ADD_TASK = 'ADD_TASK';
 export const SET_TASK = 'SET_TASK';
@@ -7,18 +8,21 @@ export const COMPLETE_TASK = 'COMPLETE_TASK';
 export const COMPLETE_ALL_TASKS = 'COMPLETE_ALL_TASKS';
 export const DELETE_ALL_TASKS = 'DELETE_ALL_TASKS';
 
-const initialState = {
+interface InitialStateType {
+    tasks: Array<ITask>
+}
+
+const initialState: InitialStateType = {
     tasks: [],
-    id: 0,
 };
 
-let tasks = [];
+let tasks: Array<ITask> = [];
 
-export const tasksReducer = (state = initialState, { type, payload }) => {
+export const tasksReducer = (state = initialState, { type, payload }: IAction): InitialStateType => {
     switch (type) {
         case ADD_TASK:
             tasks = state.tasks.concat(payload)
-            Storage.setItem('tasks', tasks); // тот самый класс что нужно создать
+            Storage.setItem('tasks', tasks);
             return {
                 ...state,
                 tasks,
