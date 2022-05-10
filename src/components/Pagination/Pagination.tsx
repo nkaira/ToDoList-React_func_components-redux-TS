@@ -16,10 +16,10 @@ const Pagination: React.FC<IPagination> = ({ onClick, filteredTasks }) => {
         pageNumbers.push(i);
     };
 
-    const handleClick = (page: number) => {
-        const stringPage = page.toString();
-        setSearchParams({ stringPage, status });
-        onClick(page);
+    const handleClick = (currentPage: number) => {
+        const page = currentPage.toString();
+        setSearchParams({ page, status });
+        onClick(currentPage);
     };
 
     return (
