@@ -1,5 +1,5 @@
 # React To Do List v2.1.
-Welcome to my web app. Thats my fourth work.
+Welcome to my web app. That's my fourth work. Project was written using functional components.
 In this project localStorage used as an emulation of requests to the server.
 env variables were loaded for educational purposes and do not contain any confidential data.
 
